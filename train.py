@@ -40,7 +40,7 @@ total_epoch = 300
 train_epoch_best_loss = 100
 solver.load("/content/gdrive/My Drive/model.pt")
 for epoch in range(1, total_epoch + 1):
-    if(epoch %10 == 0):
+    if(epoch %2 == 0):
         solver.save("/content/gdrive/My Drive/model.pt")
         #solver.load("/content/gdrive/My Drive/model.pt")
     data_loader_iter = iter(data_loader)
